@@ -1,1 +1,1 @@
-web:go_pro
+web: bin/go_pro
