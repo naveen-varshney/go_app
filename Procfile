@@ -1,1 +1,1 @@
-web: go_meeting_app
+web: go run main.go
