@@ -5,11 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assests/app.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="static/app.js"></script>
 </head>
 <body>
 
@@ -19,26 +18,19 @@
         <h3 id='main-heading'>Board Meetings<strong id="for-date"></strong></h3>
         <input class="form-control" id="search" type="text" placeholder="Search..">
         <br>
-        <div class="jumbotron">
-          <h1 class="display-4" id="company-name"></h1>
-          <p class="lead">for date</p>
-          <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </p>
-        </div>
-      </div>
-      <div class="col-xs-4" style='padding:50px;'>
-        <div class="form-group">
-          <h4>period</h4>
-          <input class="form-control" id="get-date" type="date">
-          <legend></legend>
-          <button type="button" class="btn btn-primary" id="submit-date" onclick="GetDate()">Submit</button>
-        </div>
+        <table class="table table-hover" style="margin-top:20px;">
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th>Company Name</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody id="t-body">
+          </tbody>
+        </table>
       </div>
     </div>
-    <div id='myChart'></div>
   </div>
 </body>
 </html>
