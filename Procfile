@@ -1,1 +1,1 @@
-web: main
+web: go_meeting_app
