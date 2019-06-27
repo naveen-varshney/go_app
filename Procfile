@@ -1,1 +1,1 @@
-web:go_pro
+web : go_pro
