@@ -6,9 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- <script src="typehead.bundle.js"></script> -->
+  <!-- <script src="bloodhound.js"></script> -->
+  <!-- <script src="bootstrap3-typeahead.min.js"></script> -->
+  <script src="app.js"></script>
 </head>
 <body>
 
@@ -18,12 +21,16 @@
         <h3 id='main-heading'>Board Meetings<strong id="for-date"></strong></h3>
         <input class="form-control" id="search" type="text" placeholder="Search..">
         <br>
+        <!-- <div id="remote">
+          <input class="typeahead form-control" id="search" type="text" placeholder="Search company...">
+        </div> -->
         <table class="table table-hover" style="margin-top:20px;">
           <thead>
             <tr>
               <th>Symbol</th>
               <th>Company Name</th>
               <th>Purpose</th>
+              <th>Details</th>
             </tr>
           </thead>
           <tbody id="t-body">

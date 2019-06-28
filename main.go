@@ -59,7 +59,8 @@ func getIntialResult(w http.ResponseWriter, r *http.Request){
 	    Timeout: 30 * time.Second,
 	}
 
-	request, err := http.NewRequest("GET", "https://www.nseindia.com/corporates/common/getCompanyList.jsp?query="+query, nil)
+
+	request, err := http.NewRequest("GET", "https://www.nseindia.com/corporates/corpInfo/equities/getBoardMeetings.jsp?start=20&limit=10&period=Latest%20Announced", nil)
   if err != nil {
       log.Fatal(err)
   }
@@ -83,7 +84,7 @@ func main() {
 
 	fs := http.FileServer(http.Dir("static"))
   http.Handle("/", fs)
-	http.HandleFunc("/", getIntialResult)
+	http.HandleFunc("/index", getIntialResult)
 	http.HandleFunc("/search", getSearchResult)
 	if err := http.ListenAndServe(addr, nil); err != nil {
     panic(err)
