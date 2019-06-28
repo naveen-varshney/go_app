@@ -84,7 +84,7 @@ func main() {
 
 	fs := http.FileServer(http.Dir("static"))
   http.Handle("/", fs)
-	http.HandleFunc("/index", getIntialResult)
+	http.HandleFunc("/list", getIntialResult)
 	http.HandleFunc("/search", getSearchResult)
 	if err := http.ListenAndServe(addr, nil); err != nil {
     panic(err)

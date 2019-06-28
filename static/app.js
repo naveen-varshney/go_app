@@ -21,7 +21,7 @@ $(document).ready(function(){
 function LoadInitial() {
   // console.log(url);
   $.ajax({
-                url: '/index',
+                url: '/list',
                 type: 'get',
                 // data:{'query': search},
                 success: function(data){
