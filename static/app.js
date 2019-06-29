@@ -60,6 +60,7 @@ function AddRowInTable(item) {
   document.getElementById("t-body").innerHTML += "<tr>"
     +"<td>"+ item.Symbol  +"</td>"
     +"<td>"+ item.CompanyName +"</td>"
+    +"<td>"+ item.BoardMeetingDate +"</td>"
     +"<td>"+ item.Purpose +"</td>"
     +"<td>"+ item.Details +"</td>"
     // +"<td>"+ x +"</td>"
